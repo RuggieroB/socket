@@ -36,7 +36,7 @@ while True:
 	d=dt_info[0]
 	t=dt_info[1].split('.')[0]
 	
-	if request == 'Hello!' request == 'Hello Server!' request == 'Hi!' request == 'Hi Server!':
+	if request == 'Hello!' or request == 'Hello Server!' or request == 'Hi!' or request == 'Hi Server!':
 		c.send(bytes('Goodday Client!','utf-8'))
 	elif request == 'date':
 		c.send(bytes(d,'utf-8'))

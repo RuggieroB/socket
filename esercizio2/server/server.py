@@ -25,6 +25,9 @@ while True:
 	
 	print("\n\nRiceived comunication from:\t",a,"\n\n")
 	
+	c.send(bytes('SERVER ACCEPTED COMMUNICATION\n','utf-8'))
+	c.send(bytes('COMMUNICATION OPENING','utf-8'))
+	
 	request=c.recv(1000)
 	
 	request=str(request,'utf-8')
